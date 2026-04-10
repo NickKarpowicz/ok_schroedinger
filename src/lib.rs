@@ -62,6 +62,17 @@ impl SimParams {
     }
 }
 
+fn solve_tdse(inputs: &SimParams) -> Wavefunction {
+    let mut result = inputs.wavefunction.clone();
+
+    // construct atomic propagator
+    // construct field propagators
+    // apply forward field propagator
+    // apply atomic propagator
+    // apply backward field propagator
+    //
+    result
+}
 #[pyfunction]
 fn check_input(inputs: SimParams) -> PyResult<String> {
     Ok(format!("{inputs:?}"))
